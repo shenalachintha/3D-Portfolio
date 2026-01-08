@@ -1,3 +1,4 @@
-export const Feedback = () => {
-  return <div>Feedback</div>;
+ const Feedback = () => {
+  return (<div>Feedback</div>);
 };
+export default Feedback;
