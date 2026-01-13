@@ -11,20 +11,14 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
   "React",
-  "Next.js",
-  "TypeScript",
+  "JavaScript",
   "Node.js",
-  "GraphQL",
-  "PostgreSQL",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
+  "Express.js",
+  ".NET Core",
+  "C#",
+  "Sql Server",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
   "Figma",
   "Git",
   "GitHub Actions",
@@ -102,9 +96,9 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Github, href: "https://github.com/shenalachintha" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/shenal-achintha-165022371" },
+               
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -140,13 +134,6 @@ export const Hero = () => {
                     <span className="text-sm font-medium">
                       Available for work
                     </span>
-                  </div>
-                </div>
-                {/* Stats Badge */}
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
-                  <div className="text-xs text-muted-foreground">
-                    Years Exp.
                   </div>
                 </div>
               </div>
