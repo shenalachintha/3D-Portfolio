@@ -24,7 +24,7 @@ const projects = [
     title: "Pizza Delivery App",
     description:
      " A user-friendly Pizza Delivery App designed to simplify ordering and enhance customer experience.",
-    image: "/projects/pizza.webp",
+    image: "/projects/pizza.png",
     tags: ["React", "Real Time API", "CSS"],
     link: "#",
     github: "#",
