@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F1418" />
+      <stop offset="100%" stop-color="#1B2832" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#20B2A6" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#20B2A6" stop-opacity="0.38" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)" />
+  <circle cx="170" cy="150" r="150" fill="#20B2A6" fill-opacity="0.07" />
+  <circle cx="1140" cy="590" r="190" fill="#F5A623" fill-opacity="0.06" />
+
+  <rect x="160" y="140" width="960" height="440" rx="30" fill="#11181F" stroke="#1F2C36" stroke-width="2" />
+  <rect x="190" y="170" width="380" height="120" rx="16" fill="url(#panel)" stroke="#20B2A6" stroke-opacity="0.35" />
+  <text x="215" y="230" fill="#E6F0F4" font-family="'Segoe UI', 'Inter', sans-serif" font-size="30" font-weight="800">Region API Console</text>
+  <text x="215" y="262" fill="#9BB0BC" font-family="'Segoe UI', 'Inter', sans-serif" font-size="16">CRUD • Auth • Audit logs</text>
+
+  <rect x="610" y="170" width="420" height="120" rx="16" fill="#141F27" stroke="#20B2A6" stroke-opacity="0.25" />
+  <text x="635" y="220" fill="#9BB0BC" font-family="'Segoe UI', 'Inter', sans-serif" font-size="16">POST /regions | 201 Created</text>
+  <text x="635" y="246" fill="#20B2A6" font-family="'Segoe UI', 'Inter', sans-serif" font-size="16" font-weight="700">Latency 82ms</text>
+
+  <rect x="210" y="330" width="320" height="230" rx="20" fill="#162029" stroke="#20B2A6" stroke-opacity="0.25" />
+  <text x="240" y="380" fill="#E6F0F4" font-family="'Segoe UI', 'Inter', sans-serif" font-size="18" font-weight="700">Regions</text>
+  <text x="240" y="408" fill="#9BB0BC" font-family="'Segoe UI', 'Inter', sans-serif" font-size="14">Name • Code • Status</text>
+  <rect x="240" y="430" width="240" height="18" rx="9" fill="#20B2A6" fill-opacity="0.5" />
+  <rect x="240" y="458" width="180" height="18" rx="9" fill="#F5A623" fill-opacity="0.4" />
+  <rect x="240" y="486" width="220" height="18" rx="9" fill="#20B2A6" fill-opacity="0.3" />
+
+  <rect x="570" y="330" width="260" height="230" rx="20" fill="#162029" stroke="#20B2A6" stroke-opacity="0.2" />
+  <text x="600" y="380" fill="#E6F0F4" font-family="'Segoe UI', 'Inter', sans-serif" font-size="18" font-weight="700">Audit Trail</text>
+  <text x="600" y="408" fill="#9BB0BC" font-family="'Segoe UI', 'Inter', sans-serif" font-size="14">Who • When • What</text>
+  <rect x="600" y="430" width="200" height="16" rx="8" fill="#20B2A6" fill-opacity="0.45" />
+  <rect x="600" y="456" width="170" height="16" rx="8" fill="#20B2A6" fill-opacity="0.35" />
+  <rect x="600" y="482" width="140" height="16" rx="8" fill="#F5A623" fill-opacity="0.4" />
+  <rect x="600" y="508" width="190" height="16" rx="8" fill="#20B2A6" fill-opacity="0.25" />
+
+  <rect x="870" y="330" width="220" height="230" rx="20" fill="#11181F" stroke="#1F2C36" stroke-width="2" />
+  <text x="900" y="380" fill="#E6F0F4" font-family="'Segoe UI', 'Inter', sans-serif" font-size="18" font-weight="700">Status</text>
+  <text x="900" y="408" fill="#9BB0BC" font-family="'Segoe UI', 'Inter', sans-serif" font-size="14">Regions healthy</text>
+  <rect x="900" y="430" width="180" height="18" rx="9" fill="#20B2A6" fill-opacity="0.6" />
+  <rect x="900" y="458" width="150" height="18" rx="9" fill="#20B2A6" fill-opacity="0.4" />
+  <rect x="900" y="486" width="120" height="18" rx="9" fill="#F5A623" fill-opacity="0.35" />
+</svg>

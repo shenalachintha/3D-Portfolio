@@ -6,7 +6,7 @@ const projects = [
     title: "Payment Details Management App",
     description:
      " A secure and user-friendly Payment Details Management app built to track, organize, and manage transactions efficiently.",
-    image: "/projects/payment.png",
+    image: "/projects/payment.svg",
     tags: ["React", "ASP.net", "SQL Server","C#"],
     link: "#",
     github: "#",
@@ -15,7 +15,7 @@ const projects = [
     title: "Movie Site",
     description:
      " A secure and user-friendly Movie Site built to browse, search, and discover movies efficiently.",
-    image: "/projects/moviesite.png",
+    image: "/projects/moviesite.svg",
     tags: ["React", "Api", "CSS"],
     link: "#",
     github: "#",
@@ -24,7 +24,7 @@ const projects = [
     title: "Pizza Delivery App",
     description:
      " A user-friendly Pizza Delivery App designed to simplify ordering and enhance customer experience.",
-    image: "/projects/pizza.png",
+    image: "/projects/pizza.svg",
     tags: ["React", "Real Time API", "CSS"],
     link: "#",
     github: "#",
@@ -33,7 +33,7 @@ const projects = [
     title: "Region Management Api",
     description:
      " A RESTful Region Management API designed to create, update, and manage regional data efficiently and securely.",
-    image: "/projects/region.webp",
+    image: "/projects/region.svg",
     tags: ["Asp.net", "SQL Server", "C#"],
     link: "#",
     github: "#",
