@@ -1,4 +1,4 @@
-export const Experience = () => {
+export const Certificates = () => {
     return (
        <section>
 
