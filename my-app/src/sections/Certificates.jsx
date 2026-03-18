@@ -2,31 +2,39 @@ import { ArrowUpRight, BadgeCheck, Link2 } from "lucide-react";
 
 const certificates = [
     {
-        title: "Meta Front-End Developer",
-        issuer: "Coursera • 2025",
+        title: "Complete Intro to React,v9",
+        issuer: "Frontend Masters • 2025",
         description:
-            "Specialization focused on responsive UI, React fundamentals, and accessible design systems.",
+            "Comprehensive React fundamentals including components, hooks, state management, and best practices for building modern web applications.",
         skills: ["React", "UI/UX", "Responsive Design"],
-        credentialId: "META-FE-2025",
-        credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/placeholder",
+        credentialId: "a0109c7c23-hixpadIGiV",
+        credentialUrl: "https://static.frontendmasters.com/ud/c/a0109c7c23/hixpadIGiV/complete-react-v9.pdf",
     },
     {
-        title: "AWS Cloud Practitioner",
-        issuer: "Amazon Web Services • 2024",
+        title: "Introduction to Asp.net",
+        issuer: "SimpliLearn • 2025",
         description:
-            "Validated cloud fundamentals including architectures, security, and cost-optimized deployments.",
-        skills: ["AWS", "Cloud", "Security Basics"],
-        credentialId: "AWS-CLF-001",
-        credentialUrl: "https://aws.amazon.com/verification",
+            "Foundational knowledge of ASP.NET framework, including web application development, MVC architecture, and building dynamic websites.",
+        skills: ["C#", "ASP.NET", "Web Development"],
+        credentialId: "9316557",
+        credentialUrl: "https://simpli.app.link/CWatDVXa0Xb",
     },
     {
-        title: "SQL for Data Science",
-        issuer: "Coursera • 2024",
+        title: "Web-Design for Beginners",
+        issuer: "University of Moratuwa • 2025",
         description:
-            "Practical SQL for querying, cleaning, and aggregating data across relational datasets.",
-        skills: ["SQL", "Data Modeling", "Analytics"],
-        credentialId: "SQL-DS-2024",
-        credentialUrl: "https://www.coursera.org/account/accomplishments/placeholder",
+            "Introduction to web design principles, including layout, typography, and user experience.",
+        skills: ["HTML", "CSS", "JavaScript"],
+        credentialUrl: "https://open.uom.lk/lms/mod/customcert/verify_certificate.php",
+    },
+    {
+        title: "React Js for Beginners",
+        issuer: "SimpliLearn • 2025",
+        description:
+            "Introduction to React.js, including components, props, state, and hooks.",
+        skills: ["React", "JavaScript", "UI/UX"],
+        credentialId: "9231671",
+        credentialUrl: "https://simpli-web.app.link/e/FBzQOssgKXb",
     },
 ];
 

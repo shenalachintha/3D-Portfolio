@@ -4,14 +4,22 @@ import { useEffect, useState } from "react";
 
 const navLinks = [
   { href: "#about", label: "About" },
+  { href: "#education", label: "Education" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#certificates", label: "Certificates" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleContact = () => {
+    const el = document.getElementById("contact");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +62,7 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button size="sm" onClick={handleContact}>Contact Me</Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -81,7 +89,12 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
+            <Button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                handleContact();
+              }}
+            >
               Contact Me
             </Button>
           </div>
