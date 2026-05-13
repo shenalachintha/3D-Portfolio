@@ -40,18 +40,18 @@ const certificates = [
 
 export const Certificates = () => {
     return (
-        <section id="certificates" className="py-28 relative overflow-hidden">
+        <section id="certificates" className="py-24 sm:py-28 relative overflow-hidden">
             <div className="absolute top-10 left-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl" />
             <div className="absolute bottom-10 right-10 w-56 h-56 bg-highlight/5 rounded-full blur-3xl" />
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center mx-auto max-w-3xl mb-14">
+                <div className="text-center mx-auto max-w-3xl mb-12 sm:mb-14">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
                         Certifications
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
                         Proof of continuous learning
-                        <span className="font-serif italic font-normal text-white block text-3xl md:text-4xl">
+                        <span className="font-serif italic font-normal text-white block text-2xl sm:text-3xl md:text-4xl">
                             and industry-ready skills.
                         </span>
                     </h2>
@@ -64,7 +64,7 @@ export const Certificates = () => {
                     {certificates.map((cert, idx) => (
                         <div
                             key={cert.title}
-                            className="group glass rounded-2xl p-6 border border-border/60 hover:border-primary/60 transition-all duration-300 relative overflow-hidden animate-fade-in"
+                            className="group glass rounded-2xl p-5 sm:p-6 border border-border/60 hover:border-primary/60 transition-all duration-300 relative overflow-hidden animate-fade-in"
                             style={{ animationDelay: `${(idx + 1) * 120}ms` }}
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-highlight/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

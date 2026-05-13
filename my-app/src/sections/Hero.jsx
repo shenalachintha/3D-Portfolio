@@ -4,7 +4,6 @@ import {
   ChevronDown,
   Github,
   Linkedin,
-  Twitter,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
@@ -24,6 +23,11 @@ const skills = [
   "GitHub Actions",
 ];
 
+const baseUrl = ((import.meta.env.BASE_URL || "/").endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`);
+const cvUrl = `${baseUrl}mycv.pdf`;
+
 export const Hero = () => {
   const handleContact = () => {
     const el = document.getElementById("contact");
@@ -39,6 +43,9 @@ export const Hero = () => {
         <img
           src="/hero-bg.jpg"
           alt="Hero image"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
@@ -63,28 +70,32 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-6 pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Computer Science Student | Full-Stack Web Developer 
+                Computer Science Undergraduate • Full-Stack Developer
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                I am  <span className="text-primary glow-text">a computer science undergraduate </span>
-               
-                <span className="font-serif italic font-normal text-white text-3xl md:text-4xl lg:text-5xl block mt-4">
-                 Interest in full-stack web development.
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                Building reliable
+                <span className="text-primary glow-text"> full-stack web apps </span>
+                that turn complex workflows into simple experiences.
+                <span className="font-serif italic font-normal text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-4">
+                  React • ASP.NET • Modern UI
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-           I am a Computer Science student and Full-Stack Web Developer specializing in React, Node.js, .NET Core, and JavaScript. I enjoy building scalable web applications and turning ideas into practical, real-world solutions.
+              <p className="text-base sm:text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+                I am a Computer Science undergraduate focused on full-stack
+                development. I build scalable products with React, Node.js, and
+                ASP.NET, and I am open to internships or junior roles in Sri
+                Lanka or remote.
               </p>
             </div>
 
@@ -93,14 +104,26 @@ export const Hero = () => {
               <Button size="lg" onClick={handleContact}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton as="a" href={cvUrl} download>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
             </div>
 
+            <div className="flex flex-wrap gap-3 text-[11px] sm:text-xs text-muted-foreground animate-fade-in animation-delay-400">
+              <span className="px-3 py-1 rounded-full bg-surface border border-border/60">
+                Open to internships
+              </span>
+              <span className="px-3 py-1 rounded-full bg-surface border border-border/60">
+                Replies within 24 hours
+              </span>
+              <span className="px-3 py-1 rounded-full bg-surface border border-border/60">
+                Based in Sri Lanka • Remote friendly
+              </span>
+            </div>
+
             {/* Social Links */}
-            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 animate-fade-in animation-delay-500">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
                 { icon: Github, href: "https://github.com/shenalachintha" },
@@ -110,6 +133,7 @@ export const Hero = () => {
                 <a
                   key={idx}
                   href={social.href}
+                  aria-label={`Open ${social.icon.name} profile`}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
@@ -131,6 +155,7 @@ export const Hero = () => {
                <img
   src="/projects/myself.jpeg"
   alt="Shenal Achintha Profile"
+  decoding="async"
   className="w-full aspect-[4/5] object-cover rounded-2xl"
 />  
 
@@ -149,7 +174,7 @@ export const Hero = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        <div className="mt-16 sm:mt-20 animate-fade-in animation-delay-600">
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
@@ -165,7 +190,7 @@ export const Hero = () => {
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                  <span className="text-base sm:text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skill}
                   </span>
                 </div>

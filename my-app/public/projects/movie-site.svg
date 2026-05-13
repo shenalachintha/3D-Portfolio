@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f2a"/>
+      <stop offset="1" stop-color="#273a78"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 180) rotate(90) scale(220 320)">
+      <stop offset="0" stop-color="#ffd36a" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffd36a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="320" cy="180" r="240" fill="url(#spot)"/>
+  <rect x="120" y="420" width="1040" height="180" rx="26" fill="#10162e" opacity="0.6"/>
+  <rect x="180" y="460" width="120" height="120" rx="10" fill="#1b2444" opacity="0.8"/>
+  <rect x="320" y="460" width="120" height="120" rx="10" fill="#1b2444" opacity="0.6"/>
+  <rect x="460" y="460" width="120" height="120" rx="10" fill="#1b2444" opacity="0.4"/>
+  <polygon points="760,300 760,420 880,360" fill="#ffd36a" opacity="0.65"/>
+  <path d="M720 140 L 1120 140" stroke="#4b5fb5" stroke-opacity="0.45" stroke-width="4"/>
+</svg>

@@ -35,11 +35,28 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Inter", sans-serif;
+    font-family: "Sora", sans-serif;
   }
 
   .font-serif {
-    font-family: "Playfair Display", serif;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+    font-size: 14px;
+    z-index: 1000;
+    transition: top 0.2s ease-in-out;
+  }
+
+  .skip-link:focus {
+    top: 16px;
   }
 }
 
@@ -180,5 +197,16 @@
     box-shadow: 0 0 40px
         color-mix(in srgb, var(--color-primary) 35%, transparent),
       0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

@@ -17,18 +17,18 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-32 relative overflow-hidden">
+        <section id="contact" className="py-24 sm:py-28 md:py-32 relative overflow-hidden">
             <div className="absolute top-8 left-12 w-52 h-52 bg-primary/5 rounded-full blur-3xl" />
             <div className="absolute bottom-12 right-10 w-60 h-60 bg-highlight/5 rounded-full blur-3xl" />
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center mx-auto max-w-3xl mb-14">
+                <div className="text-center mx-auto max-w-3xl mb-12 sm:mb-14">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
                         Contact
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
                         Let&apos;s build something
-                        <span className="font-serif italic font-normal text-white block text-3xl md:text-4xl">
+                        <span className="font-serif italic font-normal text-white block text-2xl sm:text-3xl md:text-4xl">
                             great together.
                         </span>
                     </h2>
@@ -38,7 +38,7 @@ export const Contact = () => {
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
-                    <div className="glass rounded-2xl p-8 border border-border/60 space-y-6 animate-fade-in">
+                    <div className="glass rounded-2xl p-6 sm:p-8 border border-border/60 space-y-6 animate-fade-in">
                         <div className="flex items-center gap-3">
                             <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
                                 <Mail className="w-6 h-6" />
@@ -49,7 +49,7 @@ export const Contact = () => {
                                     href="mailto:shenalachintha6@gmail.com"
                                     className="text-lg font-semibold text-foreground hover:text-primary"
                                 >
-                                  achinthas666@gmail.com
+                                                                    shenalachintha6@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -95,26 +95,34 @@ export const Contact = () => {
 
                     <form
                         onSubmit={handleSubmit}
-                        className="glass rounded-2xl p-8 border border-border/60 space-y-6 animate-fade-in"
+                        className="glass rounded-2xl p-6 sm:p-8 border border-border/60 space-y-6 animate-fade-in"
                         style={{ animationDelay: "150ms" }}
                     >
                         <div className="grid md:grid-cols-2 gap-4">
                             <div className="space-y-2">
-                                <label className="text-sm text-muted-foreground">Name</label>
+                                <label htmlFor="contact-name" className="text-sm text-muted-foreground">
+                                    Name
+                                </label>
                                 <input
+                                    id="contact-name"
                                     name="name"
                                     type="text"
                                     placeholder="Your name"
+                                    autoComplete="name"
                                     className="w-full rounded-xl bg-surface border border-border/60 px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none"
                                     required
                                 />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm text-muted-foreground">Email</label>
+                                <label htmlFor="contact-email" className="text-sm text-muted-foreground">
+                                    Email
+                                </label>
                                 <input
+                                    id="contact-email"
                                     name="email"
                                     type="email"
                                     placeholder="you@example.com"
+                                    autoComplete="email"
                                     className="w-full rounded-xl bg-surface border border-border/60 px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none"
                                     required
                                 />
@@ -122,21 +130,29 @@ export const Contact = () => {
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-sm text-muted-foreground">Subject</label>
+                            <label htmlFor="contact-subject" className="text-sm text-muted-foreground">
+                                Subject
+                            </label>
                             <input
+                                id="contact-subject"
                                 name="subject"
                                 type="text"
                                 placeholder="What would you like to build?"
+                                autoComplete="off"
                                 className="w-full rounded-xl bg-surface border border-border/60 px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-sm text-muted-foreground">Message</label>
+                            <label htmlFor="contact-message" className="text-sm text-muted-foreground">
+                                Message
+                            </label>
                             <textarea
+                                id="contact-message"
                                 name="message"
                                 rows={5}
                                 placeholder="Share a brief about your idea, scope, and timeline."
+                                autoComplete="off"
                                 className="w-full rounded-xl bg-surface border border-border/60 px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none resize-none"
                                 required
                             />

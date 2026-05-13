@@ -28,9 +28,9 @@ const highlights = [
 
 export const About = () => {
     return (
-      <section id="about" className="py-32 relative overflow-hidden">
+      <section id="about" className="py-24 sm:py-28 md:py-32 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
@@ -39,7 +39,7 @@ export const About = () => {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
               Building the future,
               <span className="font-serif italic font-normal text-white">
                 {" "}
@@ -49,17 +49,25 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-         I am an undergraduate Computer Science student currently seeking an internship in Software Engineering or Full Stack Web Development. I have a strong interest in creating practical, user-friendly applications and enjoy understanding how modern software systems are designed and built. I am motivated to apply my academic knowledge to real-world projects while continuing to improve my technical skills.
+                I am a Computer Science undergraduate who enjoys building
+                practical, user-friendly software that solves real problems. I
+                focus on full-stack work, connecting clean front-end experiences
+                with reliable APIs and data workflows.
               </p>
               <p>
-               I have hands-on experience with front-end technologies such as React and JavaScript, which I use to build interactive and responsive user interfaces. On the back end, I work with Node.js and Express to develop server-side logic and APIs. I also have foundational knowledge of ASP.NET, allowing me to adapt to different development environments and technologies.
+                On the front end I work with React and modern UI patterns. On
+                the back end I use Node.js, Express, and ASP.NET to design and
+                deliver stable services that teams can scale.
               </p>
               <p>
-              I am an enthusiastic learner who values teamwork, adaptability, and continuous improvement. I enjoy taking on new challenges and learning from experienced developers. Through an internship, I aim to gain industry exposure, contribute meaningfully to development teams, and grow into a capable and well-rounded full stack developer.
+                I value collaboration, continuous learning, and shipping work
+                that is easy to maintain. I am currently looking for an
+                internship or junior role where I can contribute and grow with
+                a strong engineering team.
               </p>
             </div>
-              <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
-              <p className="text-lg font-medium italic text-foreground">
+              <div className="glass rounded-2xl p-5 sm:p-6 glow-border animate-fade-in animation-delay-300">
+              <p className="text-base sm:text-lg font-medium italic text-foreground">
                 "My mission is to create digital experiences that are not just
                 functional, but truly delightful — products that users love to
                 use and developers love to maintain."
@@ -68,11 +76,11 @@ export const About = () => {
           </div>
 
           {/* Right Column - Hilights */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="glass p-6 rounded-2xl animate-fade-in"
+                className="glass p-5 sm:p-6 rounded-2xl animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
